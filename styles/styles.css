@@ -5,7 +5,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(223, 215, 215);
+  color: #f7f7f7;
   background: rgba(0, 0, 0, 0.8);
 }
 main {
@@ -46,7 +46,7 @@ footer {
 
 h1 {
   position: absolute;
-  color: #ffffff;
+  color: #f7f7f7;
   font-size: 14rem;
   line-height: 0.9;
   text-align: center;
