@@ -41,6 +41,18 @@ section img
   clear: both;
   margin: -10px;
 }
+
+.chapters section {
+  text-align: left;
+}
+.chapters h2, h2 {
+  text-align: center;
+}
+.chapters p, h4, dl {
+  margin-left: 30%;
+}
+
+
 section 
 {
   text-align: center;
@@ -53,7 +65,7 @@ footer
   font-size: 25px;
 }
 
-h1 
+h1
 {
   /* position: absolute; */
   color: #f7f7f7;
@@ -65,10 +77,12 @@ h1
 /*footer navivigation bar*/
 nav 
 {
+  padding: 30px;
   overflow: hidden;
   position: static;
   bottom: 0;
   width: 100%;
+  text-align: center;
 }
 
 nav a 
@@ -114,6 +128,5 @@ a:active
   margin: 20px;
   padding-top: 50px;
   background-color: rgb(236, 74, 53);
-  
-  
+   
 }
