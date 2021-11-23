@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>SWTL Chapters 51-60</title>
+</head>
+<body>
+    <h1>Enmanuel Marte WEB115</h1>    
+    <h2>A Smarter Way to Learn JavaScript</h2>
+        <nav>        
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_11-20.html">Chapter 11-20</a>
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_21-30.html">Chapter 21-30</a>
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_31-40.html">Chapter 31-40</a>
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_41-50.html">Chapter 41-50</a>
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_51-60.html">Chapter 51-60</a>
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_61-70.html">Chapter 61-70</a>
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_71-80.html">Chapter 71-80</a>
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_81-89.html">Chapter 81-89</a>     
+        </nav>
+    <div class="chapters">
+        <section>
+            <h2>Chapter 51. Reading and setting paragraph text</h2>
+            <p>&lt;p id="lorem"><br>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+               &lt;a href="javascript:void(0);" onClick="expandLorem();">&lt;em>Click for more.&lt;/em>&lt;/a></p>
+            <p>expandLorem() {
+            var expandedParagraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt sed nulla vitae sagittis.
+            Cras luctus dui sapien, quis porttitor elit aliquam eu. Cras massa ex, mattis sed pellentesque eu, luctus in ligula.
+            Sed sollicitudin nunc sit amet felis faucibus, sagittis elementum diam fermentum. Duis molestie eget risus a dapibus.
+            Vestibulum sagittis, odio sed porttitor hendrerit, erat erat tristique risus, id fermentum nulla ante a neque.
+            Phasellus sagittis, elit ut ornare pharetra, dui magna finibus libero, vel blandit ex sapien id felis.";<br>
+            &ensp; document.getElementById("loremIpsum").innerHTML = expandedParagraph;}</p>
+        </section>
+
+        <section>
+            <h2>Chapter 52. Manipulating images and text</h2>
+            <p>&lt;img src="blobfish.jpg" id="ugly" onClick="makeInvisible();"></p>
+            
+        </section>
+
+        <section>
+            <h2>Chapter 53. Swapping images</h2>
+            <p>&lt;img src="before.png" id="before" onMouseover="swapPic();"></p>
+            <p>function declaration</p>
+            <p>function swapPic() {<br>
+            &ensp;document.getElementById("before").src = "after.png";</p>
+
+
+        </section>
+
+        <section>
+            <h2>Chapter 54. Swapping images and setting classes</h2>
+            <p>function swapPic() {<br>
+                &ensp;var pic = document.getElementById("before");<br>
+                &ensp;pic.src = "after.png";}</p>
+                
+            <p>function enlargeForm() {<br>
+                &ensp;var form1 = document.getElementById("link1);<br>
+                &ensp;form1.className = "newClass";}</p>
+                
+         
+
+        </section>
+
+        <section>
+            <h2>Chapter 55. Setting styles</h2>
+            <p>Right-floats an image.</p>
+            <p>document.getElementById("myPhoto").style.cssFloat = "right";</p>
+            <p>Makes an element invisible.</p>
+            <p>document.getElementById("section1").style.visibility = "hidden";</p>
+            <p>Gives an element left and right margins of 20 pix.</p>
+            <p>document.getElementById("mainPic").style.margin = "0 20px 0 20px;";</p>
+        </section>
+        <section>
+            <h2>Chapter 56. Target all elements by tag name</h2>
+            <p>Assigns all divs in the document to the variable divs.</p>
+            <p>var divs = document.getElementsByTagName("div");</p>
+
+        </section>
+
+        <section>
+            <h2>Chapter 57. Target some elements by tag name</h2>
+            <p>This makes levels up specificity</p>
+            <p>var t = document.getElementById("table9");<br>
+            var cells = t.getElementsByTagName("td");<br>
+            for (var i = 0; i &lt; cells.length; i++) {<br>
+                &ensp;cells[i].style.backgroundColor = "pink"; }</p>
+
+
+        </section>
+
+        <section>
+            <h2>Chapter 58. The DOM</h2>
+            <p>The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web. 
+                You don't have to do anything special to begin using the DOM. You use the API directly in JavaScript from within what is called a script, 
+                a program run by a browser.</p>
+                <p>&lt;body onload="console.log('Welcome to my Smarter Way To Learn JavaScript page!');">&lt;/body></p>
+        </section>
+
+        <section>
+            <h2>Chapter 59. The DOM: Parents and children</h2>
+            <p>With the HTML DOM, you can navigate the node tree using node relationships.<br>
+            You can use the following node properties to navigate between nodes with JavaScript:<br>
+            parentNode<br>
+            childNodes[nodenumber]<br>
+            firstChild<br>
+            lastChild<br>
+            nextSibling<br>
+            previousSibling</p>
+
+        </section>
+
+        <section>
+            <h2>Chapter 60. The DOM: Finding children</h2>
+            <p>var div = document.getElementById("nc");<br>
+                var p = div.getElementsByTagName("p");<br>
+                var contents = p[1].innerHTML;</p>
+    
+                
+                <p>document.childNodes[0].childNodes[1].childNodes[1].childNodes[1]; <br>is the
+                first child of the document, &lt;html></p>
+                <p> document.childNodes[0].childNodes[1].childNodes[1].childNodes[1];<br> is the
+                second child of &lt;html>, &lt;body></p>
+                <p> document.childNodes[0].childNodes[1].childNodes[1].childNodes[1];<br> is the
+                second child of &lt;body>, &lt;div> with the id "nc"</p>
+                <p> document.childNodes[0].childNodes[1].childNodes[1].childNodes[1];<br> is the
+                second child of &lt;div> with the id "nc", the second &lt;p> within the div</p>
+        </section>    
+    </div>
+    <footer>
+        <nav>
+            <a href="https://github.com/lscarfacel">Github</a>
+            <a href="https://lscarfacel.github.io/index.html">Github Pages</a> 
+            <a href="https://jsfiddle.net/user/fiddles/all/">JSFiddle</a> 
+            <a href="https://discord.gg/P2tB23fK">CLTCodes Discord</a>
+			<a href="https://www.freecodecamp.org/EnmanuelMarte">FreeCodeCamp</a> 
+            <a href="https://www.linkedin.com/in/enmanuel-marte-00676116/">LinkedIn</a> 
+        </nav>
+        <p>&copy; <a href="https://www.cltcodes.com/">CLT Codes</a></p>
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flscarfacel.github.io%2Fswtl%2Fswtl_chapters_51-60.html" style="text-decoration:none;">
+            <img style="width:88px;height:31px" src="../images/button_html5_yellow.gif" alt="Valid html button"></a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flscarfacel.github.io%2Fswtl%2Fswtl_chapters_51-60.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+            <img style="width:88px;height:31px" src="../images/button_css_blue.gif" alt="Valid CSS!"></a>
+    </footer>
+</body>
+</html>
