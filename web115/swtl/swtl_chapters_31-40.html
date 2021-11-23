@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>SWTL Chapters 31-40</title>
+</head>
+<body>
+    <h1>Enmanuel Marte WEB115</h1>    
+    <h2>A Smarter Way to Learn JavaScript</h2>
+        <nav>        
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_11-20.html">Chapter 11-20</a>
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_21-30.html">Chapter 21-30</a>
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_31-40.html">Chapter 31-40</a>
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_41-50.html">Chapter 41-50</a>
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_51-60.html">Chapter 51-60</a>
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_61-70.html">Chapter 61-70</a>
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_71-80.html">Chapter 71-80</a>
+            <a href="https://lscarfacel.github.io/swtl/swtl_chapters_81-89.html">Chapter 81-89</a>     
+        </nav>
+    <div class="chapters">
+        <section>
+            <h2>Chapter 31. Getting the current date and time</h2>
+            <p>JavaScript Date objects represent a single moment in time in a platform-independent format. Date objects contain a Number that represents milliseconds since 1 January 1970 UTC.</p>
+            <p>var rightNow = new Date();<br>
+            var theDay = rightNow.getDay();</p>
+
+            
+        </section>
+
+        <section>
+            <h2>Chapter 32. Extracting parts of the date and time</h2>
+            <p>The getMonth() method returns the month in the specified date according to local time, as a zero-based value (where zero indicates the first month of the year).</p>
+            <p>var d = new Date();</p>
+            <p>var currentMonth = d.getMonth();</p>
+            <p>The getFullYear() method returns the year of the specified date according to local time.</p>
+            <p>var currYr = d.getFullYear();</p>
+            <p>The getHours() method returns the hour for the specified date, according to local time.</p>
+            <p>var currentHrs = d.getHours();</p>
+            <p>The getMinutes() method returns the minutes in the specified date according to local time.</p>
+            <p>var currMins = d.getMinutes();</p>
+            <p>The getSeconds() method returns the seconds in the specified date according to local time.</p>
+            <p>var currSecs = d.getSeconds()</p>
+        </section>
+
+        <section>
+            <h2>Chapter 33. Specifying a date and time</h2>
+
+            <p>var setDate = new Date("December 25, 2021").getTime() - new Date().getTime();<br>
+            var daysTillChristmas = Math.floor(setDate / (1000 * 60 * 60 * 24));</p>  
+
+        </section>
+
+        <section>
+            <h2>Chapter 34. Changing elements of a date and time</h2>
+            <p>The setFullYear() method sets the full year for a specified date according to local time. Returns new timestamp.</p>
+            <p>birthday.setFullYear(1991);</p>
+            <p>The setMonth() method sets the month for a specified date according to the currently set year.</p>
+            <p>birthday.setMonth(08);</p>
+            <p>The setDate() method changes the day of the month of a given Date instance, based on local time.</p>
+            <p>birthday.setDate(15);</p>
+            <p>The setHours() method sets the hours for a specified date according to local time, and returns the number of milliseconds since January 1, 1970 00:00:00 UTC until the time represented by the updated Date instance.</p>
+            <p>birthday.setHours(13);</p>
+            <p>setMinutes sets the minutes of an existing Date object without changing any other element.</p>
+            <p>birthday.setMinutes(18);</p>
+            <p>setSeconds sets the seconds of an existing Date object without changing any otherelement.</p>
+            <p>birthday.setSeconds(55);</p>
+            <p>setMilliseconds sets the milliseconds of an existing Date object without changing anyother element.</p>
+            <p>birthday.setMilliseconds(867);</p>
+      
+        </section>
+
+        <section>
+            <h2>Chapter 35. Functions</h2>
+            <p>A function is a block of JavaScript that when called automatically does the same thing again and again.</p>
+            <p>function sayHello() {<br>
+                &ensp;alert("Hello!); }</p>
+
+        </section>
+        <section>
+            <h2>Chapter 36. Functions: passing them data</h2>
+            <p>Passing an argument.</p>
+            <p>name("Marte, Enmanuel.");</p>
+            <p>A variable inside the parentheses in a function statement is known as a parameter</p>
+            <p>function name(fullName) {<br>
+                &ensp;alert(fullName);}</p>
+                
+
+        </section>
+
+        <section>
+            <h2>Chapter 37. Functions: passing data back from them</h2>
+            <p>functions can pass data back to the calling code.</p>
+            <p>function calcTot(numTot) {<br>
+                &ensp;var one = 1;<br>
+                &ensp;var two = 2;<br>
+                &ensp;total = one + two;<br>         
+                &ensp;return total;}</p>
+
+        </section>
+
+        <section>
+            <h2>Chapter 38. Functions: local vs. global variables</h2>
+            <p>A global variable is one that's declared in the main body of your code—that is, not inside a function.
+            
+            <p>var theSum<br>
+            addNumbers();</p>
+            <p>A local variable is one that's meaningful only within the function that declares it.</p>
+            <p>function addNumbers() {<br>
+            &ensp;theSum = 2 + 2;}</p>
+
+        </section>
+
+        <section>
+            <h2>Chapter 39. switch statements: how to start them</h2>
+            <p>switch(homeWorkDay) {<br>
+                &ensp;case "Sat" :<br>
+                &ensp;alert("Yeah buddy");<br>
+                &ensp;break;<br>
+                &ensp;case "Sun" :<br>
+                &ensp;alert("Tomorrow is Monday Again");<br>
+                &ensp;break;<br>
+                &ensp;case "Mon" :<br>
+                &ensp; alert("Here we go again");<br>
+                &ensp; break;<br>
+                &ensp; default :<br>
+                &ensp; alert("A little rest never kill no one");}</p>
+                
+
+        </section>
+
+        <section>
+            <h2>Chapter 40. switch statements: how to complete them</h2>
+        <p>switch(homeWorkDay) {<br>
+            &ensp;case "Sat" :<br>
+            &ensp;alert("Yeah buddy");<br>
+            &ensp;break;<br>
+            &ensp;case "Sun" :<br>
+            &ensp;alert("Tomorrow is Monday Again");<br>
+            &ensp;break;<br>
+            &ensp;case "Fri" :<br>
+            &ensp; alert("Start the cycle");<br>
+            &ensp; break;<br>
+            &ensp; default :<br>
+            &ensp; alert("No matter the day. Work must be done");}</p>
+                
+        </section>    
+    </div>
+    <footer>
+        <nav>
+            <a href="https://github.com/lscarfacel">Github</a>
+            <a href="https://lscarfacel.github.io/index.html">Github Pages</a> 
+            <a href="https://jsfiddle.net/user/fiddles/all/">JSFiddle</a> 
+            <a href="https://discord.gg/P2tB23fK">CLTCodes Discord</a>
+			<a href="https://www.freecodecamp.org/EnmanuelMarte">FreeCodeCamp</a> 
+            <a href="https://www.linkedin.com/in/enmanuel-marte-00676116/">LinkedIn</a> 
+        </nav>
+        <p>&copy; <a href="https://www.cltcodes.com/">CLT Codes</a></p>
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flscarfacel.github.io%2Fswtl%2Fswtl_chapters_31-40.html" style="text-decoration:none;" target="_blank">
+            <img style="width:88px;height:31px" src="../images/button_html5_yellow.gif" alt="Valid html button"></a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flscarfacel.github.io%2Fswtl%2Fswtl_chapters_31-40.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target=”_blank”>
+            <img style="width:88px;height:31px" src="../images/button_css_blue.gif" alt="Valid CSS!"></a>
+    </footer>
+</body>
+</html>
