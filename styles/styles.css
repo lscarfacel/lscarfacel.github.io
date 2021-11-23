@@ -50,7 +50,8 @@ section img
   text-align: center;
 }
 .chapters p, h4, dl {
-  margin-left: 30%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 
