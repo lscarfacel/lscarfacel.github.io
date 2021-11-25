@@ -15,9 +15,9 @@ function fizzBuzz() {
         } else {
             evenNum = "The number is odd";
         }
-        var node = document.createElement("p");
-        var textnode = document.createTextNode(i + " Bazoom Bazang - " + evenNum);
+        var node = document.createElement("li");
+        var textnode = document.createTextNode(i + " HeyHo! - " + evenNum);
         node.appendChild(textnode);
-        document.getElementById("myList").appendChild(node);
+        document.getElementById("fizz0List").appendChild(node);
         }  
 }
