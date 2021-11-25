@@ -9,19 +9,14 @@ body
   font-family: Arial, Helvetica, sans-serif;
   color: #f7f7f7;
   background: rgba(0, 0, 0, 0.8);
+   
 }
 main
 {
   padding: 30px;
+  font-size: 25px;
+}
 
-  font-size: 25px;
-}
-header 
-{
-  padding: 30px;
-  text-align: center;
-  font-size: 25px;
-}
 section img 
 {
   border-radius: 50%;
@@ -53,6 +48,57 @@ section img
   margin-left: 20%;
   margin-right: 20%;
 }
+h3 {
+  text-align: center;
+}
+
+header {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  font-size: 25px;
+  text-align: center;
+  background: #e4671f;
+  color: white;
+  font-size: 30px;
+  padding: 60px;
+  
+}
+
+#headerNav {
+  background-color: snow;
+  padding: 15px;
+   
+}
+
+#headerNav a {
+  color: black;
+
+}
+
+form {
+  float: none;
+  display: block;
+  margin: auto;
+  width:13%;  
+}
+
+/* #myList{
+  margin: auto;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 section 
