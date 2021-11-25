@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Press+Start+2P&family=Trochut:wght@700&display=swap" rel="stylesheet">
     <title>Manny Things - FizzBuzz1</title>
-    <link rel="stylesheet" href="styles/fizzbuzz1.css">
-    <script src="script/script.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="script/fizzbuzz1.js"></script>
 </head>
 <body>
 <header>
@@ -34,18 +34,18 @@
     <h2 id="greeting">"Welcome to Manny Things!"</h2>	
 
     		<form id="customerInfo">
-			<label for="firstName">First Name: </label>
-			<input type="text" id="firstName" placeholder="First Name.">			
-			<label for="middleInit">Middle Initial: </label>
-			<input type="text" id="middleInit" placeholder="Middle Initial.">			
-			<label for="lastName">Last Name: </label>
-			<input type="text" id="lastName" placeholder="Last Name.">			
-			<input id="submit" type="button" value="Submit" onclick="return fizzBuzz()">
-    		</form>
-		  <section id="myList">
-              <h2></h2>
-          </section>
+                <label for="firstName">First Name: </label>
+                    <input type="text" id="firstName" placeholder="First Name.">			
+                <label for="middleInit">Middle Initial: </label>
+                    <input type="text" id="middleInit" placeholder="Middle Initial.">			
+                <label for="lastName">Last Name: </label>
+                    <input type="text" id="lastName" placeholder="Last Name.">			
+                <input id="submit" type="button" value="Submit" onclick="return fizzBuzz()">
+    		</form>  
 </main>
+<section id="newList">
+    <ul id="myList"></ul>
+</section>
 
     <footer>
         <nav>
