@@ -89,6 +89,14 @@ form {
 	column-gap: 5px;
 }
 
+#fizz0List{
+  column-count: 4;
+	column-gap: 5px;
+}
+#fizz0List li{
+  list-style-type: none;
+  width: 90%;
+}
 
 li {
   width: 60%;
