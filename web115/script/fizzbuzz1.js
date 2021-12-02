@@ -7,9 +7,10 @@ function fizzBuzz() {
 	let middleInit = document.getElementById('middleInit').value;	
 	let lastName = document.getElementById('lastName').value;
     	document.getElementById('greeting').textContent = `Welcome to Manny Things, ${firstName} ${middleInit} ${lastName}!`;
-	counter = 140;
+    
+    let counter = 140;
     for(let i = 1; i <= counter; i++) {
-        var numPhrase = "";
+        let numPhrase = "";
         if(i % 3 == 0 && i % 5 == 0 ){
             numPhrase = "Hey! Ho!"
         }
@@ -22,8 +23,8 @@ function fizzBuzz() {
         else {
             numPhrase ="Santa Claus";
         }
-        var node = document.createElement("li");
-        var textnode = document.createTextNode(i + " - " + numPhrase);
+        let node = document.createElement("li");
+        let textnode = document.createTextNode(i + " - " + numPhrase);
         node.appendChild(textnode);
         document.getElementById("myList").appendChild(node);
         
