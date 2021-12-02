@@ -82,7 +82,12 @@ form {
   width:13%;  
 }
 
-
+.introMain {
+  font-size: large;
+}
+.introMain li {
+  font-size: large;
+}
 
 #myList {
  	column-count: 4;
